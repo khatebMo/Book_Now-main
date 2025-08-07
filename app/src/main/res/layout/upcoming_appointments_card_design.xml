@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12sp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/appointment_business_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/barber_example"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/appointment_business_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/appointment_business_image"
+            android:fontFamily="@font/brandon1"
+            android:text="Barbershop"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/appointment_business_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_business_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/appointment_business_image"
+            android:text="Monday Apr 15 2024"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appointment_business_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_business_day"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/appointment_business_image"
+            android:text="15 : 00  -  15 : 30"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="1000dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appointment_business_time"
+            android:layout_toRightOf="@+id/appointment_business_image"
+            android:orientation="vertical"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

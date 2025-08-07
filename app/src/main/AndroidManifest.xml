@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookNow"
+        tools:targetApi="31">
+        <activity
+            android:name=".mvvm.viewmodel.business.b_viewUpcomingAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.view.bussines_UpcomingAppointmentsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.customer.C_profile"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.business.specialOfferManagmante"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.customer.showCategoryBusinesses"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.customer.viewAppointmentsHistory"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.customer.viewUpcomingAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.model.VerifyOTP"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.customer.C_Login"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.business.B_Register"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.viewmodel.business.B_Login"
+            android:exported="false" />
+        <activity android:name=".mvvm.viewmodel.business.EditBusinessProfile" />
+        <activity android:name=".mvvm.viewmodel.business.AppointmentDateSelectionActivity" />
+        <activity android:name=".mvvm.viewmodel.business.AppointmentListActivity" />
+        <activity android:name=".mvvm.viewmodel.customer.TimeSlotSelectionActivity" />
+        <activity android:name=".mvvm.viewmodel.business.BusinessSpecialHoursEditActivity" />
+        <activity android:name=".mvvm.viewmodel.business.ServiceProviderSetWorkingDaysActivity" />
+        <activity android:name=".mvvm.viewmodel.business.ServiceProviderSetNameAndServicesActivity" />
+        <activity android:name=".mvvm.viewmodel.customer.ChooseDayandTimeActivity" />
+        <activity android:name=".mvvm.viewmodel.customer.ChooseServiceActivity" />
+        <activity android:name=".mvvm.viewmodel.customer.ShowBusinessActivity" />
+        <activity android:name=".mvvm.viewmodel.business.BusinessServiceEditActivity" />
+        <activity android:name=".mvvm.viewmodel.business.BusinessServicesManagementActivity" />
+        <activity android:name=".mvvm.viewmodel.business.BusinessRegularHoursEditActivity" />
+        <activity
+            android:name=".mvvm.viewmodel.business.BusinessSetupActivity"
+            android:parentActivityName=".mvvm.viewmodel.business.BusinessEmailVerificationActivity" />
+        <activity android:name=".mvvm.viewmodel.business.BusinessEmailVerificationActivity" />
+        <activity android:name=".mvvm.viewmodel.business.BusinessDashboardActivity" />
+        <activity
+            android:name=".mvvm.view.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mvvm.viewmodel.customer.C_Dashboard" />
+        <activity android:name=".mvvm.viewmodel.customer.viewCategories" />
+    </application>
+
+</manifest>

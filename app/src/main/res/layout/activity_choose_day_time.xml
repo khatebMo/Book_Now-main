@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/date_back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/back_icon_selector"/>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DATE"
+        android:textSize="25sp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/muli_black"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pleae Choose A Date"
+        android:layout_below="@+id/date"
+        android:fontFamily="@font/muli_black"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:padding="16dp"/>
+
+    <CalendarView
+        android:id="@+id/calendarViewSelectDateToBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/textViewSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarViewSelectDateToBook"
+        android:layout_marginTop="3dp"
+        android:padding="16dp"
+        android:text="Selected Date: None" />
+
+    <LinearLayout
+        android:id="@+id/layoutHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSelectedDate"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textViewOpenTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Time: " />
+
+        <TextView
+            android:id="@+id/textViewCloseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close Time: " />
+
+
+
+
+
+
+
+
+        <!-- should check this button :::: -->
+
+        <Button
+            android:id="@+id/buttonGotoTimeSlotsSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="NEXT"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            style="@style/BlackButton"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
